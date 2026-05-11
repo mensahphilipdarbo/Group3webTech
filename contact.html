@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact USTED Clinic in Kumasi, Ghana. Find our address, phone number, opening hours, and send us your feedback or enquiry." />
+  <title>Contact Us | USTED Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- GROUP -->
+  <div class="emergency-strip" role="alert">
+     <a href="group3">GROUP 3 WEEKEND WEB TECH PROJECT</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon" aria-hidden="true">U+</div>
+      USTED <span>&nbsp;Clinic</span>
+    </a>
+    <button class="hamburger" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="appointments.html">Appointments</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="appointments.html" class="btn-nav">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <header class="page-banner" role="banner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Contact Us</span>
+    </nav>
+    <h1>Contact &amp; Feedback</h1>
+    <p>We'd love to hear from you. Reach out via phone, email, or the form below.</p>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section aria-labelledby="contact-heading">
+    <div class="contact-grid">
+
+      <!-- CONTACT DETAILS -->
+      <aside aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get In Touch</h2>
+        <p>Whether you have an enquiry, need directions, or want to share feedback about your experience — we're here to help.</p>
+
+        <div class="contact-item">
+          <div class="ci-icon" aria-hidden="true">📍</div>
+          <div>
+            <strong>Our Address</strong>
+            
+            <span>university Hospital 99,<br/> Tanoso, Sunyani-Road, Ghana</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon" aria-hidden="true">📞</div>
+          <div>
+            <strong>Phone Numbers</strong>
+            <span>
+              Main: <a href="tel:+2330322123456" style="color:var(--primary);font-weight:600;">+233 (0) 322 123 456</a><br/>
+              Emergency: <a href="tel:+233302911911" style="color:#E74C3C;font-weight:600;">+233 302 911 911</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon" aria-hidden="true">✉️</div>
+          <div>
+            <strong>Email Addresses</strong>
+            <span>
+              General: <a href="info@USTEDclinic.gh" style="color:var(--primary);">info@USTEDclinic.gh</a><br/>
+              Appointments: <a href="mailto:info@USTEDappOclinic.gh" style="color:var(--primary);">info@USTEDclinic.gh</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon" aria-hidden="true">🕐</div>
+          <div>
+            <strong>Opening Hours</strong>
+            <span>Mon–Fri: 7:00 AM – 8:00 PM<br/>Sat: 8:00 AM – 5:00 PM<br/>Sun: 10:00 AM – 2:00 PM</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon" aria-hidden="true">🚌</div>
+          <div>
+            <strong>Getting Here</strong>
+            <span> university Hospital 99, Tanoso, Sunyani-Road, Ghana</span>
+          </div>
+        </div>
+
+        <!-- MAP PLACEHOLDER -->
+        <div class="map-placeholder" role="img" aria-label="Map placeholder showing clinic location at  university Hospital 99, Tanoso, Sunyan-Road, Ghana">
+          <div class="map-icon" aria-hidden="true">🗺️</div>
+          <p style="font-weight:600;color:var(--primary);">USTED Clinic, Kumasi</p>
+          <p style="font-size:0.8rem;"> university Hospital 99, Tanoso, Sunyan-Road, Ghana</p>
+          <p style="font-size:0.75rem;color:var(--text-l);margin-top:4px;">[Interactive map would be embedded here]</p>
+        </div>
+      </aside>
+
+      <!-- FEEDBACK FORM -->
+      <main>
+        <div class="feedback-form-card">
+          <h3>💬 Send Us a Message</h3>
+          <p>Have feedback about your visit, a general enquiry, or need more information? Fill the form below and we'll respond within 24 hours.</p>
+
+          <form id="feedbackForm" novalidate aria-label="Contact and Feedback Form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fb_name">Full Name <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                <input type="text" id="fb_name" name="fb_name" placeholder="Your full name" required autocomplete="name" aria-required="true" />
+                <span class="err-msg" id="fb_name_err" role="alert">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label for="fb_email">Email Address</label>
+                <input type="email" id="fb_email" name="fb_email" placeholder="your@email.com" autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fb_phone">Phone Number</label>
+                <input type="tel" id="fb_phone" name="fb_phone" placeholder="+233 24 000 0000" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="fb_subject">Subject <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                <select id="fb_subject" name="fb_subject" required aria-required="true">
+                  <option value="" disabled selected>Select subject</option>
+                  <option value="appointment">Appointment Enquiry</option>
+                  <option value="feedback_pos">Positive Feedback</option>
+                  <option value="feedback_neg">Complaint / Negative Feedback</option>
+                  <option value="billing">Billing &amp; Insurance</option>
+                  <option value="general">General Enquiry</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="err-msg" role="alert"></span>
+              </div>
+            </div>
+
+            <!-- STAR RATING -->
+            <div class="rating-group">
+              <label>Rate Your Experience (Optional)</label>
+              <div class="stars" role="group" aria-label="Rating from 1 to 5 stars">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars — Excellent" aria-label="5 stars">★</label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars — Good" aria-label="4 stars">★</label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars — Average" aria-label="3 stars">★</label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars — Poor" aria-label="2 stars">★</label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star — Very Poor" aria-label="1 star">★</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fb_message">Your Message <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+              <textarea id="fb_message" name="fb_message" rows="5" placeholder="Write your message, feedback, or enquiry here..." required aria-required="true"></textarea>
+              <span class="err-msg" id="fb_msg_err" role="alert">Please enter a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-green form-submit">
+              📨 Send Message
+            </button>
+
+          </form>
+
+          <!-- SUCCESS MESSAGE -->
+          <div id="feedbackSuccess" class="success-msg" role="alert" aria-live="polite">
+            ✅ Thank you for your message! We'll get back to you within 24 hours.
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section style="background:var(--light); padding:60px 5%;" aria-labelledby="faq-heading">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <p>Quick answers to the questions we hear most often.</p>
+    </div>
+    <div class="grid-2" style="max-width:960px;margin:0 auto;">
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">Do I need an appointment to visit?</h3>
+        <p>Walk-ins are welcome for general consultations, but booking an appointment guarantees a shorter waiting time and a dedicated slot with your preferred doctor.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">Which insurance schemes do you accept?</h3>
+        <p>We accept NHIS (National Health Insurance Scheme) and all major private health insurance plans including GLICO, Enterprise, and Nationwide.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">How do I access my test results?</h3>
+        <p>Lab results are available within 24–48 hours and can be collected at the clinic. Results can also be sent to your email upon request when you register.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">Can I cancel or reschedule an appointment?</h3>
+        <p>Yes. Please call our reception at least 24 hours in advance to cancel or reschedule. You can also send an email to our appointments team.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.1rem;">
+          <div class="logo-icon" aria-hidden="true">U+</div>
+          USTED <span>&nbsp;Clinic</span>
+        </div>
+        <p>USTED Clinic is a university clinic dedicated to providing quality healthcare for students, staff, and surrounding communities.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="appointments.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html">General Medicine</a></li>
+          <li><a href="services.html">Laboratory</a></li>
+          <li><a href="services.html">Dental Care</a></li>
+          <li><a href="services.html">Maternal Health</a></li>
+          <li><a href="services.html">Emergency</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Contact</p>
+        <p><span aria-hidden="true">📍</span> university Hospital 99, Tanoso, Sunyani-Road, Ghana</p>
+        <p><span aria-hidden="true">📞</span> +233 (0) 322 123 456</p>
+        <p><span aria-hidden="true">✉️</span> info@USTEDclinic.gh</p>
+        <p><span aria-hidden="true">🕐</span> Mon–Fri: 7AM–8PM | Sat: 8AM–5PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> USTED Clinic. All rights reserved. | ICT233 Group 3 — USTED</span>
+      <span>HTML · CSS · JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

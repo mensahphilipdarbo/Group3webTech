@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book an appointment online at USTED Clinic. Select your preferred service, date, and doctor. Quick, easy, and available 24/7." />
+  <title>Book Appointment | USTED Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- GROUP -->
+  <div class="emergency-strip" role="alert">
+     <a href="group3">GROUP 3 WEEKEND WEB TECH PROJECT</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon" aria-hidden="true">U+</div>
+      USTED <span>&nbsp;Clinic</span>
+    </a>
+    <button class="hamburger" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="appointments.html" class="active">Appointments</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="appointments.html" class="btn-nav">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <header class="page-banner" role="banner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Book Appointment</span>
+    </nav>
+    <h1>Book an Appointment</h1>
+    <p>Fill the form below to schedule your visit. We'll confirm within 2 business hours.</p>
+  </header>
+
+  <!-- APPOINTMENTS SECTION -->
+  <section aria-labelledby="appt-heading">
+    <div class="appt-section">
+
+      <!-- INFO COLUMN -->
+      <aside aria-label="Appointment Information">
+        <h2 id="appt-heading">How It Works</h2>
+        <p>Booking an appointment at USTED Clinic is quick and easy. Simply complete the form, and our team will confirm your slot by phone or email.</p>
+
+        <div class="info-card">
+          <div class="info-icon" aria-hidden="true">📝</div>
+          <div>
+            <strong>Step 1 — Fill the Form</strong>
+            <span>Provide your personal details and select your preferred service, doctor, and appointment date.</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon" aria-hidden="true">📞</div>
+          <div>
+            <strong>Step 2 — Confirmation Call</strong>
+            <span>Our receptionist will call or email you within 2 business hours to confirm your appointment slot.</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon" aria-hidden="true">🏥</div>
+          <div>
+            <strong>Step 3 — Visit the Clinic</strong>
+            <span>Arrive 10 minutes early with your National Health Insurance card or valid ID.</span>
+          </div>
+        </div>
+
+        <div class="hours-badge">
+          <h4>🕐 Opening Hours</h4>
+          <table class="hours-table" aria-label="Clinic Opening Hours">
+            <tbody>
+              <tr><td>Monday – Friday</td><td>7:00 AM – 8:00 PM</td></tr>
+              <tr><td>Saturday</td><td>8:00 AM – 5:00 PM</td></tr>
+              <tr><td>Sunday</td><td>10:00 AM – 2:00 PM</td></tr>
+              <tr><td>Emergency Dept</td><td>24 Hours / 7 Days</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </aside>
+
+      <!-- FORM COLUMN -->
+      <main>
+        <div class="appt-form-card">
+          <h3>📅 Appointment Request Form</h3>
+
+          <form id="apptForm" novalidate aria-label="Appointment Booking Form">
+
+            <fieldset style="border:none;padding:0;margin-bottom:8px;">
+              <legend style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px;">Personal Information</legend>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first_name">First Name <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <input type="text" id="first_name" name="first_name" placeholder="Kwame" required autocomplete="given-name" aria-required="true" />
+                  <span class="err-msg" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="last_name">Last Name <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <input type="text" id="last_name" name="last_name" placeholder="Asante" required autocomplete="family-name" aria-required="true" />
+                  <span class="err-msg" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="kwame@email.com" required autocomplete="email" aria-required="true" />
+                  <span class="err-msg" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="+233 24 000 0000" required autocomplete="tel" aria-required="true" />
+                  <span class="err-msg" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="dob">Date of Birth <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <input type="date" id="dob" name="dob" required aria-required="true" />
+                  <span class="err-msg" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gender <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <select id="gender" name="gender" required aria-required="true">
+                    <option value="" disabled selected>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other / Prefer not to say</option>
+                  </select>
+                  <span class="err-msg" role="alert"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <hr style="border:none;border-top:1.5px solid var(--light);margin:16px 0 22px;" />
+
+            <fieldset style="border:none;padding:0;margin-bottom:8px;">
+              <legend style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px;">Appointment Details</legend>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="department">Department / Service <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <select id="department" name="department" required aria-required="true">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="general">General Consultation</option>
+                    <option value="laboratory">Laboratory &amp; Diagnostics</option>
+                    <option value="dental">Dental Care</option>
+                    <option value="maternal">Maternal &amp; Child Health</option>
+                    <option value="eye">Eye Care (Ophthalmology)</option>
+                    <option value="physio">Physiotherapy &amp; Rehab</option>
+                    <option value="mental">Mental Health</option>
+                    <option value="emergency">Emergency (Non-Critical)</option>
+                  </select>
+                  <span class="err-msg" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="doctor">Preferred Doctor (Optional)</label>
+                  <select id="doctor" name="doctor">
+                    <option value="" selected>No preference</option>
+                    <option value="dr_mensah">Dr. Kofi Mensah (General)</option>
+                    <option value="dr_amoah">Dr. Abena Amoah (Obstetrics)</option>
+                    <option value="dr_owusu">Dr. Eric Owusu (Dental)</option>
+                    <option value="dr_asare">Dr. Gifty Asare (Eye Care)</option>
+                    <option value="dr_boateng">Dr. Samuel Boateng (Physio)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="appt_date">Preferred Date <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <input type="date" id="appt_date" name="appt_date" required aria-required="true" />
+                  <span class="err-msg" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="appt_time">Preferred Time <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                  <select id="appt_time" name="appt_time" required aria-required="true">
+                    <option value="" disabled selected>Select time slot</option>
+                    <option value="07:00">7:00 AM – 8:00 AM</option>
+                    <option value="08:00">8:00 AM – 9:00 AM</option>
+                    <option value="09:00">9:00 AM – 10:00 AM</option>
+                    <option value="10:00">10:00 AM – 11:00 AM</option>
+                    <option value="11:00">11:00 AM – 12:00 PM</option>
+                    <option value="13:00">1:00 PM – 2:00 PM</option>
+                    <option value="14:00">2:00 PM – 3:00 PM</option>
+                    <option value="15:00">3:00 PM – 4:00 PM</option>
+                    <option value="16:00">4:00 PM – 5:00 PM</option>
+                  </select>
+                  <span class="err-msg" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="visit_type">Visit Type <span aria-hidden="true" style="color:#E74C3C">*</span></label>
+                <select id="visit_type" name="visit_type" required aria-required="true">
+                  <option value="" disabled selected>Select visit type</option>
+                  <option value="new">New Patient Visit</option>
+                  <option value="followup">Follow-up Appointment</option>
+                  <option value="checkup">Routine Check-up</option>
+                </select>
+                <span class="err-msg" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Additional Notes / Symptoms</label>
+                <textarea id="notes" name="notes" placeholder="Briefly describe your symptoms or reason for visit (optional)..." aria-label="Additional notes"></textarea>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-green form-submit">
+              ✅ Submit Appointment Request
+            </button>
+
+          </form>
+
+          <!-- SUCCESS MESSAGE -->
+          <div id="apptSuccess" class="success-msg" role="alert" aria-live="polite">
+            🎉 Your appointment request has been submitted! We'll confirm via phone or email within 2 business hours.
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.1rem;">
+          <div class="logo-icon" aria-hidden="true">U+</div>
+          USTED <span>&nbsp;Clinic</span>
+        </div>
+        <p>USTED Clinic is a university clinic dedicated to providing quality healthcare for students, staff, and surrounding communities.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="appointments.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Services</p>
+        <ul class="footer-links">
+          <li><a href="services.html">General Medicine</a></li>
+          <li><a href="services.html">Laboratory</a></li>
+          <li><a href="services.html">Dental Care</a></li>
+          <li><a href="services.html">Maternal Health</a></li>
+          <li><a href="services.html">Emergency</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Contact</p>
+        <p><span aria-hidden="true">📍</span>university Hospital 99, Tanoso, Sunyani-Road, Ghana</p>
+        <p><span aria-hidden="true">📞</span> +233 (0) 322 123 456</p>
+        <p><span aria-hidden="true">✉️</span> info@USTEDclinic.gh</p>
+        <p><span aria-hidden="true">🕐</span> Mon–Fri: 7AM–8PM | Sat: 8AM–5PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> USTED Clinic. All rights reserved. | ICT233 Group 3 — USTED</span>
+      <span>HTML · CSS · JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

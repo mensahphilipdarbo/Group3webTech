@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MediPoint Clinic services — General medicine, laboratory diagnostics, dental, maternal health, pharmacy, and 24/7 emergency care in Kumasi, Ghana." />
+  <title>Our Services | USTED CLINIC</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .search-bar {
+      max-width: 520px;
+      margin: 0 auto 48px;
+      display: flex;
+      gap: 0;
+      border: 2px solid var(--border);
+      border-radius: 50px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 13px 20px;
+      border: none;
+      outline: none;
+      font-size: 0.92rem;
+      font-family: var(--font-body);
+      color: var(--text);
+      background: transparent;
+    }
+    .search-bar button {
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 13px 22px;
+      cursor: pointer;
+      font-size: 0.92rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .search-bar button:hover { background: var(--primary-l); }
+    #noResult {
+      display: none;
+      text-align: center;
+      color: var(--text-l);
+      padding: 40px;
+      grid-column: 1/-1;
+      font-size: 0.95rem;
+    }
+    .dept-badge {
+      display: inline-block;
+      background: var(--light);
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 10px;
+      border-radius: 50px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+ <!-- GROUP -->
+  <div class="emergency-strip" role="alert">
+     <a href="group3">GROUP 3 WEEKEND WEB TECH PROJECT</a>
+  </div>
+  
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon" aria-hidden="true">U+</div>
+      USTED <span>&nbsp;Clinic</span>
+    </a>
+    <button class="hamburger" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="appointments.html">Appointments</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="appointments.html" class="btn-nav">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <header class="page-banner" role="banner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Services</span>
+    </nav>
+    <h1>Our Medical Services</h1>
+    <p>Comprehensive healthcare solutions delivered by expert professionals, all under one roof.</p>
+  </header>
+
+  <!-- SERVICES GRID -->
+  <section class="services-full" aria-labelledby="services-title">
+    <div class="section-header">
+      <span class="section-tag">All Departments</span>
+      <h2 id="services-title">What We Specialise In</h2>
+      <p>Search or browse all available services at USTED Clinic.</p>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar" role="search">
+      <label for="serviceSearch" class="sr-only">Search services</label>
+      <input type="text" id="serviceSearch" placeholder="Search services (e.g. dental, blood test...)" aria-label="Search services" />
+      <button type="button" aria-label="Search">🔍 Search</button>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- 1 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#D6EAF8;color:#1A5276;" aria-hidden="true">🩺</div>
+          <div>
+            <div class="dept-badge">Out-Patient</div>
+            <h3>General Consultations</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Our general practitioners provide thorough diagnosis and management of a wide range of medical conditions, from routine check-ups to chronic disease monitoring.</p>
+          <ul>
+            <li>Routine health examinations</li>
+            <li>Chronic disease management (diabetes, hypertension)</li>
+            <li>Minor surgical procedures</li>
+            <li>Medical certificates &amp; referrals</li>
+            <li>Travel medicine &amp; vaccinations</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#D5F5E3;color:#1A5276;" aria-hidden="true">🔬</div>
+          <div>
+            <div class="dept-badge">Diagnostics</div>
+            <h3>Laboratory &amp; Diagnostics</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Our fully equipped laboratory provides accurate, fast results for a comprehensive range of diagnostic tests to support clinical decision-making.</p>
+          <ul>
+            <li>Full blood count &amp; biochemistry panels</li>
+            <li>Malaria rapid diagnostic tests</li>
+            <li>HIV, hepatitis, and STI screening</li>
+            <li>Urinalysis &amp; stool microscopy</li>
+            <li>X-ray &amp; ultrasound imaging</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#FDEBD0;color:#A04000;" aria-hidden="true">💊</div>
+          <div>
+            <div class="dept-badge">Pharmacy</div>
+            <h3>Pharmacy Services</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Our on-site pharmacy is stocked with a comprehensive range of medications, dispensed by licensed pharmacists who provide guidance on proper use.</p>
+          <ul>
+            <li>Prescription &amp; over-the-counter medications</li>
+            <li>Medication counselling &amp; education</li>
+            <li>Drug interaction checks</li>
+            <li>Chronic disease medication supply</li>
+            <li>Vaccines &amp; health supplements</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#FDEDEC;color:#A93226;" aria-hidden="true">🦷</div>
+          <div>
+            <div class="dept-badge">Dental</div>
+            <h3>Dental Care</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Comprehensive dental services for patients of all ages delivered by qualified dentists using modern equipment and techniques.</p>
+          <ul>
+            <li>Dental examinations &amp; cleaning</li>
+            <li>Tooth fillings &amp; extractions</li>
+            <li>Root canal treatment</li>
+            <li>Dentures &amp; orthodontics</li>
+            <li>Cosmetic whitening procedures</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#F4ECF7;color:#7D3C98;" aria-hidden="true">🤰</div>
+          <div>
+            <div class="dept-badge">Maternal Health</div>
+            <h3>Maternal &amp; Child Health</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Dedicated maternal and child health services ensuring safe pregnancies, healthy deliveries, and healthy child development from birth to adolescence.</p>
+          <ul>
+            <li>Antenatal care &amp; monitoring</li>
+            <li>Safe delivery services</li>
+            <li>Postnatal care &amp; breastfeeding support</li>
+            <li>Child immunisation &amp; growth monitoring</li>
+            <li>Family planning counselling</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#FDEDEC;color:#A93226;" aria-hidden="true">🚑</div>
+          <div>
+            <div class="dept-badge">Emergency</div>
+            <h3>Emergency &amp; Trauma Care</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Our 24/7 Emergency Department is fully equipped to handle acute conditions, trauma, and life-threatening emergencies with rapid-response specialists.</p>
+          <ul>
+            <li>24/7 emergency response</li>
+            <li>Trauma management &amp; wound care</li>
+            <li>Resuscitation &amp; critical care</li>
+            <li>Emergency surgery support</li>
+            <li>Ambulance coordination</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#EBF5FB;color:#1A5276;" aria-hidden="true">🧠</div>
+          <div>
+            <div class="dept-badge">Specialist</div>
+            <h3>Mental Health Services</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Compassionate mental health support from trained counsellors and psychologists for individuals, couples, and families navigating emotional challenges.</p>
+          <ul>
+            <li>Individual &amp; group counselling</li>
+            <li>Stress &amp; anxiety management</li>
+            <li>Depression screening &amp; therapy</li>
+            <li>Substance abuse support</li>
+            <li>Referrals to psychiatric care</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#D5F5E3;color:#196F3D;" aria-hidden="true">🏋️</div>
+          <div>
+            <div class="dept-badge">Rehab</div>
+            <h3>Physiotherapy &amp; Rehabilitation</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Personalised physiotherapy programmes to help patients recover mobility, strength, and function after injury, surgery, or chronic musculoskeletal conditions.</p>
+          <ul>
+            <li>Musculoskeletal physiotherapy</li>
+            <li>Post-surgical rehabilitation</li>
+            <li>Sports injury treatment</li>
+            <li>Neurological rehabilitation</li>
+            <li>Hydrotherapy &amp; electrotherapy</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="service-full-card">
+        <div class="card-head">
+          <div class="card-icon-lg" style="background:#FDEBD0;color:#A04000;" aria-hidden="true">👁️</div>
+          <div>
+            <div class="dept-badge">Specialist</div>
+            <h3>Eye Care (Ophthalmology)</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Comprehensive eye care services including vision testing, prescription eyewear consultations, and treatment of common and complex eye conditions.</p>
+          <ul>
+            <li>Vision &amp; refraction testing</li>
+            <li>Prescription glasses &amp; contacts</li>
+            <li>Glaucoma screening</li>
+            <li>Diabetic eye examinations</li>
+            <li>Cataract management &amp; referral</li>
+          </ul>
+        </div>
+      </article>
+
+      <div id="noResult" role="status">No services found matching your search. Try a different keyword.</div>
+
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip" aria-labelledby="cta-heading">
+    <h2 id="cta-heading">Need a Service? Book Today.</h2>
+    <p>Our team is ready to attend to you. Schedule your appointment in minutes.</p>
+    <a href="appointments.html" class="btn btn-primary">📅 Book an Appointment</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.1rem;">
+          <div class="logo-icon" aria-hidden="true">U+</div>
+          USTED <span>&nbsp;Clinic</span>
+        </div>
+        <p>USTED Clinic is a university clinic dedicated to providing quality healthcare for students, staff, and surrounding communities</p>
+      </div>
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="appointments.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Services</p>
+        <ul class="footer-links">
+          <li><a href="#">General Medicine</a></li>
+          <li><a href="#">Laboratory</a></li>
+          <li><a href="#">Dental Care</a></li>
+          <li><a href="#">Maternal Health</a></li>
+          <li><a href="#">Emergency</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Contact</p>
+        <p><span aria-hidden="true">📍</span> university Hospital 99, Tanoso, Sunyan-Road, Ghana</p>
+        <p><span aria-hidden="true">📞</span> +233 (0) 322 123 456</p>
+        <p><span aria-hidden="true">✉️</span> info@USTEDclinic.gh</p>
+        <p><span aria-hidden="true">🕐</span> Mon–Fri: 7AM–8PM | Sat: 8AM–5PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> USTED Clinic. All rights reserved. | ICT233 Group 3 — USTED</span>
+      <span>HTML · CSS · JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
